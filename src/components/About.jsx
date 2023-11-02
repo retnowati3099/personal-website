@@ -21,8 +21,8 @@ function About() {
 
         {/* img */}
         <div className='flex-1 flex justify-end items-center'>
-            <div className='w-[260px] h-[260px] rounded-[130px]'>
-                <img src="/src/assets/myfoto.jpg" alt="my foto" className='bg-cover w-full h-full'/>
+            <div className='w-[260px] h-[260px]'>
+                <img src="/src/assets/myfoto.jpg" alt="my foto" className='object-cover object-top w-full h-full border-8 border-[#27374D] rounded-full'/>
             </div>
         </div>
     </div>
