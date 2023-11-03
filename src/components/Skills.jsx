@@ -2,7 +2,7 @@ import React from 'react'
 
 function Skills() {
   return (
-    <div className='flex flex-col items-center p-[81px] gap-[72px]'>
+    <div id="skills" className='flex flex-col items-center p-[81px] gap-[72px]'>
       <div className='flex flex-col gap-3'>
         <span className='text-[#27374D] text-[32px] text-center font-bold'>Skills</span>
         <span className='text-[#353535] text-xl text-center'>I have experience with these technologies</span>
