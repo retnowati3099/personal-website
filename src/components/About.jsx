@@ -2,7 +2,7 @@ import React from 'react'
 
 function About() {
   return (
-    <div className='flex justify-between items-center p-[81px]'>
+    <div id="about" className='flex justify-between items-center p-[81px]'>
         <div className='flex-1 flex flex-col gap-10'>
             <div className='flex flex-col gap-[10px]'>
                 <span className='text-[#27374D] text-xl font-bold'>Hello everyone, I am</span>
