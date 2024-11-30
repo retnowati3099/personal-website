@@ -5,10 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Website | Retno Wati</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#27374D',
+                        black: '#353535'
+                    }
+                },
+            },
+        }
+    </script>
 </head>
 
-<body>
-    <h1>This is my personal website</h1>
+<body class="font-poppins">
+    <header class="h-[75px] flex justify-between items-center shadow-md">
+        <div class="text-2xl font-bold pl-20 text-primary">Retno Wati</div>
+        <nav class="pr-20">
+            <ul class="flex gap-10 [&>li>a:hover]:text-primary">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Certifications</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
 
 </html>
