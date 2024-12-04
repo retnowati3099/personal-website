@@ -131,25 +131,27 @@
                 </div>
             </div>
         </div>
-        <div id="certifications" class="my-32 py-[75px] flex flex-col gap-[72px]">
+        <div id="certifications" class="my-32 py-[75px] flex flex-col gap-[60gitpx]">
             <div class="text-center ">
                 <h1 class="text-[32px] text-primary font-bold ">Certifications</h1>
                 <p class="text-xl text-black ">Those are some of my certifications</p>
             </div>
             <div class="w-full flex justify-evenly items-center">
                 <!-- Shift left -->
-                <button class="bg-primary p-2 text-white w-10 text-2xl rounded-md">
+                <button class="bg-primary p-2 text-white w-10 text-2xl rounded-md" onclick="shift(-1)">
                     <i class="fa-solid fa-chevron-left"></i>
                 </button>
-                <div class="flex justify-center">
-                    <img src="/assets/belajar-membuat-aplikasi-web-dengan-react-certificate.jpg" alt=" belajar membuat aplikasi web dengan react certificate" class="w-[500px]">
+                <div class="flex items-center w-[500px] h-[500px]">
+                    <img src="/assets/belajar-membuat-aplikasi-web-dengan-react-certificate.jpg" alt="belajar membuat aplikasi web dengan react certificate" class="slide">
+                    <img src="/assets/enterprise-architecture-foundations.jpg" alt="enterprise architecture foundations" class="slide">
                 </div>
                 <!-- Shift right -->
-                <button class="bg-primary p-2 text-white w-10 text-2xl rounded-md">
+                <button class="bg-primary p-2 text-white w-10 text-2xl rounded-md" onclick="shift(1)">
                     <i class="fa-solid fa-chevron-right"></i>
                 </button>
             </div>
         </div>
+
         <div id="contacts" class="my-32 py-[75px] flex flex-col gap-[72px]">
             <div class="text-center ">
                 <h1 class="text-[32px] text-primary font-bold ">Contacts</h1>
@@ -207,6 +209,9 @@
         <hr class="my-10">
         <div class="text-[14px] font-semibold text-center pb-10">&copy Copyright Retno Wati 2024</div>
     </footer>
+    <script src="script.js"></script>
 </body>
+
+</html>
 
 </html>
