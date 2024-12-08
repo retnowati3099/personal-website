@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="box-border">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -39,12 +39,14 @@
                     <li><a href="#contacts">Contacts</a></li>
                 </ul>
             </nav>
-            <img src="assets/dark_mode.svg" alt="dark mode" class="w-10 cursor-pointer">
+            <button class="w-8 h-8 p-1 flex justify-center items-center rounded-full hover:bg-secondary" onclick="changeMode()">
+                <img src="assets/dark_mode.svg" alt="dark mode" id="mode">
+            </button>
         </div>
     </header>
-    <main class="p-20">
-        <div id="about" class="flex justify-between items-center">
-            <div class="w-[500px] h-[400px] relative">
+    <main class="p-20 bg-blue-200">
+        <div id="about" class="flex flex-col-reverse md:flex-row justify-between items-center gap-4">
+            <div class="w-full md:w-[500px] md:h-[400px] relative text-center md:text-justify bg-green-200">
                 <h2 class="text-xl text-primary font-bold">Hallo everyone, I am</h2>
                 <h1 class="text-[40px] text-black font-bold my-8">Retno Wati</h1>
                 <p class="text-black">A
@@ -52,9 +54,9 @@
                     <b>Management Trainee program</b> at Peruri, with a focus on the role of <b>Enterprise Architect</b>. Passionate about <b>web development</b> and
                     <b>software engineering</b>, continuously enhancing skills through online courses to stay updated with industry trends.
                 </p>
-                <button class="bg-primary text-white text-base font-semibold px-4 py-2 rounded-md mt-8 flex items-center gap-2 absolute bottom-0 left-0 hover:bg-white hover:text-primary ">Download CV <i class="fa-solid fa-download"></i></button>
+                <button class="bg-primary text-white text-base font-semibold px-4 py-2 rounded-md mt-8 flex items-center gap-2 absolute left-[50%] translate-x-[-50%] md:bottom-0 md:left-0 md:translate-x-0 hover:bg-white hover:text-primary ">Download CV <i class="fa-solid fa-download"></i></button>
             </div>
-            <div class="w-[250px] h-[250px]">
+            <div class="w-[250px] h-[250px] bg-yellow-200">
                 <div class="w-full h-full rounded-full border-8 border-primary">
                     <img src="assets/profile.jpg" alt="profile" class="rounded-full object-cover object-top w-full h-full">
                 </div>
@@ -131,7 +133,7 @@
                 </div>
             </div>
         </div>
-        <div id="certifications" class="my-32 py-[75px] flex flex-col gap-[60gitpx]">
+        <div id="certifications" class="my-32 py-[75px] flex flex-col gap-[60px]">
             <div class="text-center ">
                 <h1 class="text-[32px] text-primary font-bold ">Certifications</h1>
                 <p class="text-xl text-black ">Those are some of my certifications</p>
@@ -186,9 +188,9 @@
         </div>
     </main>
     <footer class="bg-primary px-[81px] pt-[81px] text-white">
-        <div class="flex justify-between">
-            <div class="flex flex-col justify-between">
-                <div>
+        <div class="flex flex-col-reverse md:flex-row justify-between gap-8">
+            <div class="flex flex-col justify-between items-center md:items-start">
+                <div class="hidden md-block">
                     <div class=" text-lg font-bold">Retno Wati</div>
                     <div class="text-[14px]">Address: Gunungkidul, Yogyakarta, Indonesia</div>
                 </div>
@@ -198,7 +200,7 @@
                     <a href="mailto:retnowati3099@gmail.com" target="_blank"><img src="assets/email-square-icon.svg" alt="email icon"></a>
                 </div>
             </div>
-            <div class="flex flex-col gap-4 text-sm [&>a:hover]:underline">
+            <div class="flex flex-col gap-4 text-center md:text-left text-sm [&>a:hover]:underline">
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
